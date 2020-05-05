@@ -1,0 +1,46 @@
+$fino-white:    #fff !default;
+$fino-gray-100: #f8f9fa !default;
+$fino-gray-200: #e9ecef !default;
+$fino-gray-300: #dee2e6 !default;
+$fino-gray-400: #ced4da !default;
+$fino-gray-500: #adb5bd !default;
+$fino-gray-600: #6c757d !default;
+$fino-gray-700: #495057 !default;
+$fino-gray-800: #343a40 !default;
+$fino-gray-900: #212529 !default;
+$fino-black:    #000 !default;
+
+$fino-blue:    #007bff !default;
+$fino-indigo:  #6610f2 !default;
+$fino-purple:  #6f42c1 !default;
+$fino-pink:    #e83e8c !default;
+$fino-red:     #dc3545 !default;
+$fino-orange:  #fd7e14 !default;
+$fino-yellow:  #ffc107 !default;
+$fino-green:   #28a745 !default;
+$fino-teal:    #20c997 !default;
+$fino-cyan:    #17a2b8 !default;
+
+$fino-primary:       #2980b9 !default;
+$fino-secondary:     #3498db !default;
+$fino-success:       $fino-green !default;
+$fino-info:          $fino-cyan !default;
+$fino-warning:       $fino-yellow !default;
+$fino-danger:        $fino-red !default;
+$fino-light:         $fino-gray-100 !default;
+$fino-dark:          $fino-gray-800 !default;
+
+$fino-theme-colors: (
+  "primary":    $fino-primary,
+  "secondary":  $fino-secondary,
+  "success":    $fino-success,
+  "info":       $fino-info,
+  "warning":    $fino-warning,
+  "danger":     $fino-danger,
+  "light":      $fino-light,
+  "dark":       $fino-dark
+);
+
+$fino-font-family: Arial, Helvetica, sans-serif !default;
+$fino-font-size:14px;
+$fino-font-color:$fino-gray-800;

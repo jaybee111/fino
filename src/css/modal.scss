@@ -1,0 +1,50 @@
+.fino-modal-wrapper {
+  background: rgba($fino-gray-100, 0.5);
+  height:100vh;
+  width:100vw;
+  position: fixed;
+  top:0;
+  left:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  * {
+    font-family: $fino-font-family;
+    font-size:$fino-font-size;
+    color:$fino-font-color;
+  }
+}
+
+.fino-modal {
+  overflow: auto;
+  max-height:100%;
+  width:95%;
+  background:#fff;
+  border-radius:10px;
+  box-shadow: 0 20px 25px -5px rgba(0,0,0,.1),0 10px 10px -5px rgba(0,0,0,.04);
+  position: relative;
+}
+
+.fino-modal__header {
+  display: flex;
+  padding:10px;
+  border-bottom: 1px solid $fino-gray-200;
+}
+
+.fino-modal__close-handler {
+  display: inline-block;
+  margin-left:auto;
+  padding:5px;
+}
+
+.fino-modal__list-wrapper {
+  display: flex;
+  height:450px;
+}
+
+@media (min-width: 991px) {
+  .fino-modal {
+    width:960px;
+  }
+}

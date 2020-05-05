@@ -1,0 +1,83 @@
+{
+    "name": "fino",
+    "version": "1.0.0",
+    "description": "A JavaScript-Tool for managing your files and images.",
+    "main": "dist/fino.min.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "serve": "webpack-dev-server --config webpack.dev.js --mode development",
+        "build": "webpack --config webpack.prod.js --mode production",
+        "preview": "npm run build && http-server dist",
+        "release-patch": "npm version patch && git push origin master && git push --tags",
+        "release-minor": "npm version minor && git push origin master && git push --tags",
+        "release-major": "npm version major && git push origin master && git push --tags"
+    },
+    "dependencies": {
+        "@babel/runtime": "^7.9.2",
+        "feather-icons": "^4.26.0"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.9.0",
+        "@babel/plugin-transform-runtime": "^7.9.0",
+        "@babel/preset-env": "^7.9.0",
+        "autoprefixer": "^9.7.5",
+        "babel-eslint": "^10.1.0",
+        "babel-loader": "^8.1.0",
+        "clean-webpack-plugin": "^3.0.0",
+        "css-loader": "^3.4.2",
+        "cssnano": "^4.1.10",
+        "eslint": "^6.8.0",
+        "eslint-config-airbnb-base": "^14.1.0",
+        "eslint-loader": "^3.0.3",
+        "eslint-plugin-import": "^2.20.1",
+        "file-loader": "^4.3.0",
+        "html-webpack-plugin": "^3.2.0",
+        "http-server": "^0.11.1",
+        "mini-css-extract-plugin": "^0.8.2",
+        "miragejs": "^0.1.35",
+        "node-sass": "^4.13.1",
+        "optimize-css-assets-webpack-plugin": "^5.0.3",
+        "postcss-loader": "^3.0.0",
+        "sass-loader": "^8.0.2",
+        "source-map-loader": "^0.2.4",
+        "style-loader": "^1.1.3",
+        "uglifyjs-webpack-plugin": "^2.2.0",
+        "url-loader": "^2.3.0",
+        "webpack": "^4.42.1",
+        "webpack-cli": "^3.3.11",
+        "webpack-dev-server": "^3.10.3"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jaybee111/fino.git"
+    },
+    "author": "Jonas Böttcher",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/jaybee111/fino/issues"
+    },
+    "homepage": "https://github.com/jaybee111/fino#readme",
+    "eslintConfig": {
+        "root": true,
+        "env": {
+            "es6": true,
+            "browser": true
+        },
+        "extends": [
+            "airbnb-base"
+        ],
+        "parser": "babel-eslint",
+        "parserOptions": {
+            "sourceType": "module"
+        },
+        "rules": {
+            "linebreak-style": 0,
+            "no-prototype-builtins": 0,
+            "no-param-reassign": 0
+        }
+    },
+    "browserslist": [
+        "> 1%",
+        "last 2 versions"
+    ]
+}

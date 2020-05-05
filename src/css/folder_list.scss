@@ -1,0 +1,84 @@
+.fino-folder-list {
+  height:100%;
+  width:30%;
+  border-right:1px solid $fino-gray-300;
+  overflow-y:auto;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+    display: none;
+  }
+
+  > ul {
+    display: block;
+    > li {
+      border-bottom: 1px solid $fino-gray-300;
+    }
+  }
+}
+
+.fino-folder-list__item {
+  padding:0 0 0 10px;
+
+  &.is-open {
+    background:$fino-gray-100;
+    > ul {
+      display: block;
+    }
+    > .fino-folder-list__name-wrapper {
+      .fino-folder-list__accordion-handler {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &.is-selected {
+    > .fino-folder-list__name-wrapper {
+      .fino-folder-list__name {
+        span {
+          color:$fino-primary;
+        }
+
+        svg {
+          path {
+            stroke:$fino-primary;
+            fill:$fino-primary;
+          }
+        }
+      }
+    }
+  }
+
+  svg {
+    display: inline-block;
+
+    path {
+      fill:$fino-font-color;
+    }
+  }
+}
+
+.fino-folder-list__name-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.fino-folder-list__name {
+  display: flex;
+  text-decoration: none;
+  padding:13px 0;
+  align-items: center;
+  margin-right: auto;
+  width:100%;
+  word-break: break-word;
+
+  svg {
+    margin:0 5px 0 0;
+  }
+}
+
+.fino-folder-list__accordion-handler {
+  padding:10px 5px;
+}

@@ -1,0 +1,33 @@
+.fino-notification {
+  position: absolute;
+  bottom:15px;
+  right:15px;
+  display: flex;
+  border-radius:3px;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
+  padding:10px;
+  width:200px;
+}
+
+.fino-notification__icon {
+  margin:0 10px 0 0;
+}
+
+@each $color, $value in $fino-theme-colors {
+  .fino-notification-#{$color} {
+    background-color:$value;
+    color:$fino-white;
+    border:1px solid $value;
+
+    .fino-notification__content {
+      color:$fino-white;
+    }
+
+    svg {
+      path,
+      line {
+        stroke:$fino-white;
+      }
+    }
+  }
+}
