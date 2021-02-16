@@ -6,5 +6,6 @@ export default {
   settings: {},
   selectedFileType: '',
   clipboard: {},
+  notification: {},
   currentRequests: [],
 };

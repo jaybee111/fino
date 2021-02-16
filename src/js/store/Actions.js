@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/no-cycle
 import LibRequest from '../libs/LibRequest';
 
 export default {
@@ -7,6 +6,7 @@ export default {
     const request = new LibRequest(
       store.state.settings.api.endpoints.folderList.url,
       requestParams,
+      store,
     );
     const items = await request.send();
     store.commit('folderList', items);

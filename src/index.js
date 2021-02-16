@@ -13,6 +13,7 @@ import store from './js/store/Instance';
 import ComponentModal from './js/components/ComponentModal';
 import ComponentFolderList from './js/components/ComponentFolderList';
 import ComponentActionBar from './js/components/ComponentActionBar';
+import ComponentNotifications from './js/components/ComponentNotifications';
 
 // Translation
 import I18nDe from './js/i18n/I18nDe';
@@ -35,6 +36,16 @@ import makeServer from './server';
 if (process.env.NODE_ENV === 'development') {
   makeServer('development');
 }
+
+// eslint-disable-next-line func-names
+/*
+(function () {
+  // eslint-disable-next-line no-eval
+  const global = (0, eval)('this');
+  global.$finoStore = store;
+}());
+console.log(this.$finoStore);
+*/
 
 export default class Fino {
   static init(customSettings = {}) {
@@ -86,6 +97,8 @@ export default class Fino {
     folderList.render();
     const actionBar = new ComponentActionBar();
     actionBar.render();
+    const notifications = new ComponentNotifications();
+    notifications.render();
 
     return settings;
   }

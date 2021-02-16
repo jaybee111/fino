@@ -10,7 +10,9 @@ export default class ComponentFolderList extends LibComponent {
       element: document.querySelector('.fino-folder-list'),
     });
     store.dispatch('updateFolderList');
-    store.events.subscribe('stateChangeFolderList', () => this.render());
+    store.events.subscribe('stateChangeFolderList', () => {
+      this.render();
+    });
   }
 
   render() {

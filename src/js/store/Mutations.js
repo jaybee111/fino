@@ -29,4 +29,9 @@ export default {
 
     return state;
   },
+  notification(state, payload) {
+    state.notification = payload;
+
+    return state;
+  },
 };

@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/no-extraneous-dependencies
 import { Server, Model } from 'miragejs';
 
 export default function makeServer(environment) {

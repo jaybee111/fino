@@ -11,7 +11,7 @@ const libraryName = 'fino';
 module.exports = {
   entry: './src/index.js',
   output: {
-    filename: `${libraryName}.js`,
+    filename: `${libraryName}.min.js`,
     path: buildPath,
     libraryTarget: 'umd',
     library: 'Fino',
